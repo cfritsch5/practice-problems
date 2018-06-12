@@ -1,0 +1,24 @@
+yeah, it's hard to find those kinds of practice problems. what i would do is brainstorm "real world" or computer-type systems that could use a graph to represent them, then think about where something like BFS could be useful. so for example, on one interivew (not liveramp but the question was sort of similar) the guy asked about a trucking system. there were X number of warehouses and trucks had fixed routes going between them. the questions were things like: how would you think about this problem abstractly (kind of implied in any of these questions)? how would you determine the optimal route from Seattle to Atlanta? ("optimal" was not defined - great opportunity to ask clarifying questions and talk about what you might want to optimize in that problem). you could also think of other systems: file dependencies; maps of "related" words, e.g., two words are related if they're one letter off from one another; social networks. try to think of all the variations on these that you can, and for each variation think of how your conception of the graph would change (weighted or unweighted edges? directed or undirected? will there be cycles, potentially? if not, how do you know?) those questions can help you determine which algorithms are available to you. also think about what you might want to do with these graphs, e.g. social networks: maybe you want to find the shortest path between two people to start, that's pretty straightforward BFS. then maybe you want to do something like find all paths between you and someone else. or maybe you want to find all the people who are at least a certain distance away. build your way up from there on each example.
+one other thing you may want to do is look back at the LRU cache assignment from a/A. don't bother with the implementation -- relearn how it's built conceptually. i remember that played into my phone interview but i can't remember the exact question. the interviewer never said "lru cache" but we essentially built a pseudo-coded lru cache as we went through the problem, which he told me at the end
+
+* brainstorm real world problems that would use a graph to represent them
+-> what algos / data structures would be useful?
+->what do we need to optimize?
+->what information are we looking for / what to return
+
+
+____
+ trucking system. there were X number of warehouses and trucks had fixed routes going between them. the questions were things like: how would you think about this problem abstractly (kind of implied in any of these questions)? how would you determine the optimal route from Seattle to Atlanta?
+
+ warehouse = nodes
+ route = edge
+ what does optimal mean ?
+ im imagining something like shortest distance, oe shortest time,
+ where we could use an implimentatioin of dijkstras using the route time or
+ distance as the weight of an edge to calculate the least cost path between warehouses
+
+ or if we need to hit warehouses to pick up
+
+
+ ____
+ social networks: maybe you want to find the shortest path between two people to start, that's pretty straightforward BFS. then maybe you want to do something like find all paths between you and someone else. or maybe you want to find all the people who are at least a certain distance away. build your way up from there on each example.
