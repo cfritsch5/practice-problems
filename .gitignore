@@ -1,6 +1,9 @@
 .git
 .DS_Store
+<<<<<<< HEAD
 node_modules
 bundle
 bundles
 *.map
+=======
+>>>>>>> 7108f0b35ac36ad249bf6cabe21951b11b373b11
